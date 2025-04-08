@@ -1,9 +1,11 @@
-/*
+/* 
+///////////////////////
 // ROOT
-*/
+///////////////////////
+*/ 
 
 :root {
- 
+    --dirty-glue: #EEE8E1;
     --soft-amber: #C7BCB0;
     --khaki: #BBAA96;
     --tom-thumb: #4A5A3D;
@@ -19,37 +21,10 @@
 }
 
 /* 
-// Grid system - https://www.w3schools.com/css/css_rwd_grid.asp 
-*/
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-}
- 
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-}
-
-.row::after {
-    display: table;
-}
-
-/*
+///////////////////////
 // NAVBAR
-*/
+///////////////////////
+*/ 
 
 #navbar {
     background-color: var(--rangitito);
@@ -65,19 +40,20 @@
     font-family: Montserrat;
     color: var(--soft-amber);
     background-color: none;
-    font-size: 40px;
+    font-size: 2vi;
     font-weight: 500;
     text-decoration: none;
     text-align: center;
     margin-right: 1.5%;
     border-radius: 10px;
     padding: 0.5% 1%;
+    transition: 0.2s ease-in-out background-color;
+    transition: 0.2s ease-in-out color;
 }
 
 #navbar a:hover {
     color: var(--rangitito);
     background-color: var(--soft-amber);
-
 }
 
 #cart:hover {
@@ -89,14 +65,289 @@
     margin-right: 50%;
 }
 
-/*
+
+/* 
+///////////////////////
+// HOME PAGE
+///////////////////////
+*/ 
+
+#home {
+    background-color: var(--soft-amber);
+}
+
+/* BANNER */
+
+#banner {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    margin-bottom: 7.5%;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner-opacity {
+    position: absolute;
+    z-index: 2;
+}
+
+#banner-graphic {
+    width: 60% !important;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+}
+
+#banner-graphic p {
+    color: var(--soft-amber);
+    font-family: Montserrat;
+    font-size: 2.1vi;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 5%;
+    margin-top: 6%;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+}
+
+/* BEST SELLERS */
+
+#best-sellers {
+    width: 90%;
+    margin: 0% 5%;
+    border-radius: 10px;
+    border: 3px solid var(--shingle-fawn);
+    background: var(--khaki);
+    position: relative;
+    margin-bottom: 1%;
+}
+
+#best-sellers-title {
+    border-radius: 10px;
+    color: var(--dirty-glue);
+    background: var(--rangitito);
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 0.8vi;
+    text-align: center;
+    padding: 0.5%;
+    width: 15%;
+    position: absolute;
+    top: -4.5%;
+    left: 4.5%;
+}
+
+#product-container {
+    width: 90%;
+    margin: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.product {
+    border-radius: 10px;
+    padding: 1%;
+    background: var(--dirty-glue);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    color: var(--rangitito);
+    font-family: Roboto;
+}
+
+.product h1 {
+    font-size: 2vi;
+}
+
+.product p {
+    font-size: 0.75vi;
+    font-style: italic;
+}
+
+.product h2 {
+    font-size: 1.25vi;
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+    width: 100%;
+    height: 110vh;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#testimonial-1 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    width: 25%;
+}
+#testimonial-2 {
+    position: absolute;
+    right: -2%;
+    top: 10%;
+    width: 45%;
+}
+#testimonial-text-1 {
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    width: 35%;
+    color: black;
+    font-family: Montserrat;
+    font-size: 3vi;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 7.5%;
+}
+#testimonial-text-1 span {
+    font-weight: 400;
+    font-style: italic;
+}
+#testimonial-3 {
+    position: absolute;
+    left: 0;
+    top: 22%;
+    width: 40%;
+}
+#testimonial-text-2 {
+    position: absolute;
+    left: -3%;
+    top: 22%;
+    width: 40%;
+    width: 35%;
+    color: black;
+    font-family: Montserrat;
+    font-size: 2.8vi;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 9%;
+}
+#testimonial-text-2 span {
+    font-weight: 400;
+    font-style: italic;
+}
+#testimonial-4 {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    width: 28%;
+}
+
+/* NEWSLETTER */
+
+#newsletter {
+    width: 100%;
+    height: 70vh;
+    background-image: url('../images/NewsletterImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#signup-box {
+    border-radius: 10px;
+    border: 3px solid var(--rangitito);
+    background: var(--dirty-glue);
+    width: 40%;
+    margin: 5% 28%;
+    position: absolute;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 2%;
+}
+
+#signup-box h1 {
+    color: var(--rangitito);
+    font-weight: 700;
+    font-size: 3vi;
+}
+
+#signup-box p {
+    color: var(--tom-thumb);
+    font-style: italic;
+    font-weight: 900;
+    line-height: 135.539%;
+    font-size: 1.75vi;
+    width: 90%;
+    margin: 2.5% 5%;
+}
+
+#signup-box button {
+    width: 80%;
+    border-radius: 20px;
+    border: 3px solid var(--rangitito);
+    background: var(--tom-thumb);
+    color: var(--dirty-glue);
+    padding: 2% 1%;
+    font-size: 2vi;
+    font-weight: 700;
+}
+
+/* 
+///////////////////////
+// CONTACT US
+///////////////////////
+*/ 
+
+
+
+/* 
+///////////////////////
 // FOOTER
-*/
+///////////////////////
+*/ 
 
 #footer {
     background-color: var(--rangitito);
     overflow: hidden;
-    position: absolute;
     bottom: 0;
     width: 100%;
+    height: 15vh;
+    padding: 1%;
+    font-family: Montserrat;
+    display: flex;
+}
+
+#footer-logo {
+    width: 60%;
+    color: var(--dirty-glue);
+    font-weight: 700;
+    font-size: 1vi;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    gap: 10%;
+    width: 40%;
+    margin-right: 5%;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-links a {
+    text-decoration: none;
+    color: var(--dirty-glue);
+    font-size: 1vi;
+    margin-bottom: 6%;
+}
+
+.footer-header {
+    color: var(--dirty-glue);
+    font-weight: 700 !important;
+    font-size: 1.25vi !important;
 }
