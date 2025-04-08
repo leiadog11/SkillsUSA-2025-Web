@@ -57,13 +57,15 @@
     background-color: var(--soft-amber);
 }
 
+#navbar img {
+    width: 5%;
+    margin-right: 50%;
+    cursor: pointer;
+}
+
 #cart:hover {
     color: var(--soft-amber) !important;
     background-color: var(--rangitito) !important;
-}
-
-#logo {
-    margin-right: 50%;
 }
 
 
@@ -695,6 +697,7 @@
 .social-link {
     width: 30%;
     padding: 2%;
+    cursor: pointer;
 }
 
 #social-image {
@@ -732,6 +735,11 @@
     color: var(--dirty-glue);
     font-weight: 700;
     font-size: 1vi;
+}
+
+#footer-logo img {
+    width: 10%;
+    cursor: pointer;
 }
 
 #footer-links {
