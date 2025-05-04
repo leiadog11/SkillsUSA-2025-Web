@@ -351,6 +351,9 @@
     top: -2%;
     left: 4.5%;
 }
+#shop-title h1{
+    margin: 0;
+}
 
 .shop-product {
     border-radius: 10px;
@@ -365,16 +368,22 @@
 }
 
 .shop-product h1 {
-    font-size: 2vi;
+    font-size: 2.4vi;
+    margin: .5rem;
 }
 
 .shop-product p {
-    font-size: 0.75vi;
+    font-size: 1.4vi;
     font-style: italic;
+    margin-bottom: 1.5rem;
 }
 
 .shop-product h2 {
-    font-size: 1.25vi;
+    font-size: 1.75vi;
+}
+
+.shop-product img{
+    max-height: 331px;
 }
 
 .modal {
@@ -390,20 +399,89 @@
     background-color: rgba(0,0,0,0.5); 
   }
 
-  .modal-content {
-    background-color: #fff;
+  .modal-content.container {
+    background-color: var(--dirty-glue);
     margin: auto;
     padding: 2rem;
+    padding-top: .5rem;
     border: 1px solid #888;
-    width: 60%;
-    text-align: center;
+    width: 70%;
+    text-align: left;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    color: var(--rangitito);
+    font-family: Montserrat;
+  }
+
+  .modal-content img{
+    width: 100%;
+  }
+  
+  .modal-content h1{
+    font-weight: bold;
+  }
+
+  .modal-content h1, .modal-content h2, .modal-content h3, #AddToCart, #itemNumber {
+    font-weight: bold;
+  }
+
+  .modalDesc{
+    font-weight: 400;
+  }
+
+  .modal-content #modalSlogan, .modal-content .modalDesc, .option-btns{
+    font-family: Roboto;
+  }
+
+  .modal-content h2, p{
+    color: var(--tom-thumb);
+    font-style: italic;
+  }
+
+  .option-btns{
+    margin-bottom: 1.2em;
+  }
+  #modalSelected, #modalAlt{
+    border-radius: 15px;
+    color: #fff;
+    padding: .2em .5em;
+    margin: .2em 0;
+    font-size: 1.2rem;
+  }
+  #modalSelected{
+    border: 1px solid var(--shingle-fawn);
+    background: var(--Khaki, #BBAA96);
+  }
+  #modalAlt{
+    border: none;
+    background: var(--Soft-Amber, #C7BCB0);
+  }
+
+  #AddToCart{
+    border-radius: 20px;
+    border: 3px solid var(--Rangitito, #2A2D21);
+    background: var(--Tom-Thumb, #4A5A3D);
+    color: #EEE8E1;
+    padding: .2em .7em;
+    margin: .5em;
+    font-size: 1.4rem;
+  }
+
+  #itemNumber{
+    border-radius: 10px;
+    border: 2px solid var(--Shingle-Fawn, #6D553B);
+    background: var(--Dirty-Glue, #EEE8E1);
+    padding: .5em;
+    font-size: 1.2rem;
+  }
+
+  #modalPrice{
+    font-style: none;
   }
 
   .close-button {
     color: #aaa;
-    float: right;
+    float: right !important;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
