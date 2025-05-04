@@ -2,7 +2,7 @@
 ///////////////////////
 // ROOT
 ///////////////////////
-*/ 
+*/
 
 :root {
     --dirty-glue: #EEE8E1;
@@ -12,7 +12,7 @@
     --shingle-fawn: #6D553B;
     --rangitito: #2A2D21;
     --pine-tree: #20211B;
- 
+
     overflow-x: hidden;
 }
 
@@ -25,7 +25,7 @@
 ///////////////////////
 // NAVBAR
 ///////////////////////
-*/ 
+*/
 
 #navbar {
     background-color: var(--rangitito);
@@ -73,7 +73,7 @@
 ///////////////////////
 // HOME PAGE
 ///////////////////////
-*/ 
+*/
 
 #home {
     background-color: var(--soft-amber);
@@ -210,12 +210,14 @@
     left: 30%;
     width: 25%;
 }
+
 #testimonial-2 {
     position: absolute;
     right: -2%;
     top: 10%;
     width: 45%;
 }
+
 #testimonial-text-1 {
     position: absolute;
     right: 1%;
@@ -228,16 +230,19 @@
     text-align: right;
     margin-top: 7.5%;
 }
+
 #testimonial-text-1 span {
     font-weight: 400;
     font-style: italic;
 }
+
 #testimonial-3 {
     position: absolute;
     left: 0;
     top: 22%;
     width: 40%;
 }
+
 #testimonial-text-2 {
     position: absolute;
     left: -3%;
@@ -251,10 +256,12 @@
     text-align: right;
     margin-top: 9%;
 }
+
 #testimonial-text-2 span {
     font-weight: 400;
     font-style: italic;
 }
+
 #testimonial-4 {
     position: absolute;
     bottom: 0;
@@ -317,7 +324,7 @@
 ///////////////////////
 // SHOP
 ///////////////////////
-*/ 
+*/
 
 #shop {
     background-color: var(--soft-amber);
@@ -351,7 +358,8 @@
     top: -2%;
     left: 4.5%;
 }
-#shop-title h1{
+
+#shop-title h1 {
     margin: 0;
 }
 
@@ -382,24 +390,24 @@
     font-size: 1.75vi;
 }
 
-.shop-product img{
+.shop-product img {
     max-height: 331px;
 }
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 100;
     padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.5); 
-  }
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-  .modal-content.container {
+.modal-content.container {
     background-color: var(--dirty-glue);
     margin: auto;
     padding: 2rem;
@@ -408,56 +416,68 @@
     width: 70%;
     text-align: left;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: var(--rangitito);
     font-family: Montserrat;
-  }
+}
 
-  .modal-content img{
+.modal-content img {
     width: 100%;
-  }
-  
-  .modal-content h1{
-    font-weight: bold;
-  }
+    border-radius: 10px;
+}
 
-  .modal-content h1, .modal-content h2, .modal-content h3, #AddToCart, #itemNumber {
+.modal-content h1 {
     font-weight: bold;
-  }
+}
 
-  .modalDesc{
+.modal-content h1,
+.modal-content h2,
+.modal-content h3,
+#AddToCart,
+#itemNumber {
+    font-weight: bold;
+}
+
+.modalDesc {
     font-weight: 400;
-  }
+}
 
-  .modal-content #modalSlogan, .modal-content .modalDesc, .option-btns{
+.modal-content #modalSlogan,
+.modal-content .modalDesc,
+.option-btns {
     font-family: Roboto;
-  }
+}
 
-  .modal-content h2, p{
+.modal-content h2,
+p {
     color: var(--tom-thumb);
     font-style: italic;
-  }
+}
 
-  .option-btns{
+.option-btns {
     margin-bottom: 1.2em;
-  }
-  #modalSelected, #modalAlt{
+}
+
+#modalSelected,
+#modalAlt {
     border-radius: 15px;
     color: #fff;
     padding: .2em .5em;
     margin: .2em 0;
     font-size: 1.2rem;
-  }
-  #modalSelected{
+}
+
+#modalSelected {
     border: 1px solid var(--shingle-fawn);
     background: var(--Khaki, #BBAA96);
-  }
-  #modalAlt{
+}
+
+#modalAlt {
     border: none;
     background: var(--Soft-Amber, #C7BCB0);
-  }
+}
 
-  #AddToCart{
+#AddToCart {
     border-radius: 20px;
     border: 3px solid var(--Rangitito, #2A2D21);
     background: var(--Tom-Thumb, #4A5A3D);
@@ -465,31 +485,31 @@
     padding: .2em .7em;
     margin: .5em;
     font-size: 1.4rem;
-  }
+}
 
-  #itemNumber{
+#itemNumber {
     border-radius: 10px;
     border: 2px solid var(--Shingle-Fawn, #6D553B);
     background: var(--Dirty-Glue, #EEE8E1);
     padding: .5em;
     font-size: 1.2rem;
-  }
+}
 
-  #modalPrice{
+#modalPrice {
     font-style: none;
-  }
+}
 
-  .close-button {
+.close-button {
     color: #aaa;
     float: right !important;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  .close-button:hover {
+.close-button:hover {
     color: black;
-  }
+}
 
 
 #navigation {
@@ -504,11 +524,15 @@
     gap: 5%;
 }
 
+#navigation .fa-solid {
+    padding-top: .35rem;
+}
+
 /* 
 ///////////////////////
 // CONTACT US
 ///////////////////////
-*/ 
+*/
 
 #contact {
     background-color: var(--soft-amber);
@@ -613,7 +637,7 @@
     margin-bottom: 2%;
 }
 
-#glow-form p { 
+#glow-form p {
     color: var(--dirty-glue);
     font-style: italic;
     font-weight: 400;
@@ -622,7 +646,8 @@
     margin-bottom: 2%;
 }
 
-#glow-form input, #glow-form textarea {
+#glow-form input,
+#glow-form textarea {
     width: 90%;
     font-family: Roboto;
     color: rgba(74, 90, 61, 0.54);
@@ -739,7 +764,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     border-radius: 10px;
     border: 3px solid #000;
     background: var(--tom-thumb);
@@ -749,11 +774,12 @@
     color: var(--dirty-glue);
     font-weight: 700;
     text-align: center;
-    font-size: 2.5vi;
+    font-size: 5.5vi;
+    margin: 1rem .5rem;
 }
 
 #social-links {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -765,7 +791,7 @@
     padding: 4%;
     width: 100%;
     color: var(--dirty-glue);
-    font-size: 7vi;
+    font-size: 11vi;
     background-color: var(--rangitito);
     border: 3px solid #000;
     border-radius: 10px;
@@ -791,11 +817,22 @@
     width: 70%;
 }
 
+/*LOCATION*/
+.location-container {
+    border-radius: 10px;
+    border: 3px solid var(--Rangitito, #2A2D21);
+    background: var(--Dirty-Glue, #EEE8E1);
+}
+
+.location-img img {
+    max-height: 400px;
+}
+
 /* 
 ///////////////////////
 // FOOTER
 ///////////////////////
-*/ 
+*/
 
 #footer {
     background-color: var(--rangitito);
