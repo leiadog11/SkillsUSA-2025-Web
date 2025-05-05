@@ -1,102 +1,199 @@
 <!doctype html>
 <html>
-    <head>
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'>            
-        <title>Home</title>
-        <link rel='stylesheet' href='css/index.css'> 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        </style>
-        <script src="https://kit.fontawesome.com/0af409642f.js" crossorigin="anonymous"></script>
-    </head>
-    <body id="home">
-        <div id="navbar">
-            <img src="images/GreenGlow_logo.png"></img>
-            <a href="#home">Home</a>
-            <a href="Shop.html">Shop</a>
-            <a href="Contact.html">Contact Us</a>
-            <a id="cart" href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
 
-        <div id="banner">
-            <div id="banner-graphic">
-                <img src="images/BannerGraphic.svg"></img>
-                <p>
-                    At GreenGlow, we believe that sustainability doesn’t have to be boring. Every product we offer is a step toward a greener, 
-                    more thoughtful way to live. Because small swaps = big impact.
-                </p>
-            </div>
-            <img id="banner-opacity" src="images/BannerOpacity.png"></img>
-            <img src="images/BannerImage.png" alt="Page banner of woman reading book next to candle"></img>
-        </div>
+<head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Home</title>
+    <link rel='stylesheet' href='css/index.css'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/0af409642f.js" crossorigin="anonymous"></script>
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</head>
 
-        <div id="best-sellers">
-            <div id="best-sellers-title">
-                <h1>Best Sellers</h1>
+<body id="home">
+    <div id="navbar">
+        <img src="images/GreenGlow_logo.png"></img>
+        <a href="#home">Home</a>
+        <a href="Shop.html">Shop</a>
+        <a href="Contact.html">Contact Us</a>
+        <a id="cart" href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+    </div>
+
+    <div id="banner">
+        <div id="banner-graphic">
+            <img src="images/BannerGraphic.svg"></img>
+            <p>
+                At GreenGlow, we believe that sustainability doesn’t have to be boring. Every product we offer is a step
+                toward a greener,
+                more thoughtful way to live. Because small swaps = big impact.
+            </p>
+        </div>
+        <img id="banner-opacity" src="images/BannerOpacity.png"></img>
+        <img src="images/BannerImage.png" alt="Page banner of woman reading book next to candle"></img>
+    </div>
+
+    <div id="best-sellers">
+        <div id="best-sellers-title">
+            <h1>Best Sellers</h1>
+        </div>
+        <button id="shop-all" onclick="location.href='Shop.html'">Shop All</button>
+        <div id="product-container">
+            <div class="shop-product" data-name="GlowBar" data-slogan="Lather. Rinse. Radiate."
+                data-selected-option="Orange Oatmeal" data-alt-option="Lemongrass Mint"
+                data-description="These waterless shampoo cubes activate in your hands — not a plastic bottle in sight. Infused with jojoba, nettle, and good karma."
+                data-price="$13.99" data-image="images/GlowBar.png">
+                <img src="images/GlowBar.png" alt="Glowbar product image"></img>
+                <h1>GlowBar</h1>
+                <p>Orange Oatmeal</p>
+                <h2>$13.99</h2>
             </div>
-            <button id="shop-all" onclick="location.href='Shop.html'">Shop All</button>
-            <div id="product-container">
-                <div class="product">
-                    <img src="images/GlowBar.png" alt="Glowbar product image"></img>
-                    <h1>GlowBar</h1>
-                    <p>Orange Oatmeal</p><br/>
-                    <h2>$13.99</h2>
+            <div class="shop-product" data-name="GlowBar" data-slogan="Lather. Rinse. Radiate."
+                data-selected-option="Lemongrass Mint" data-alt-option="Orange Oatmeal"
+                data-description="These waterless shampoo cubes activate in your hands — not a plastic bottle in sight. Infused with jojoba, nettle, and good karma."
+                data-price="$13.99" data-image="images/lemongrass-mint.png">
+                <img src="images/lemongrass-mint.png" alt="Glowbar product image"></img>
+                <h1>GlowBar</h1>
+                <p>Lemongrass Mint</p>
+                <h2>$13.99</h2>
+            </div>
+            <div class="shop-product" data-name="GlowBar" data-slogan="Lather. Rinse. Radiate."
+                data-selected-option="Orange Oatmeal" data-alt-option="Lemongrass Mint"
+                data-description="These waterless shampoo cubes activate in your hands — not a plastic bottle in sight. Infused with jojoba, nettle, and good karma."
+                data-price="$13.99" data-image="images/GlowBar.png">
+                <img src="images/GlowBar.png" alt="Glowbar product image"></img>
+                <h1>GlowBar</h1>
+                <p>Orange Oatmeal</p>
+                <h2>$13.99</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials">
+        <img id="testimonial-1" src="images/Candle.png"></img>
+        <img id="testimonial-2" src="images/Ellipse1.svg"></img>
+        <p id="testimonial-text-1">“Every time I light a Wick’d candle, I feel like a druid in a cottagecore
+            fairytale.”<br /><span>— Eli R., Asheville</span></p>
+        <img id="testimonial-3" src="images/Ellipse2.svg"></img>
+        <p id="testimonial-text-2">“I replaced half my bathroom shelf with GreenGlow finds. My plants are jealous of how
+            natural I smell.”<br /><span>— Jessie R., Portland</span></p>
+        <img id="testimonial-4" src="images/GlowBar2.png"></img>
+    </div>
+
+    <div id="newsletter">
+        <div id="signup-box">
+            <h1>Glow Gang Newsletter</h1>
+            <p>Sign up for zero-waste tips, surprise discounts, and good vibes in your inbox.</p>
+            <button onclick="location.href='Contact.html'">Join the Glow Gang</button>
+        </div>
+    </div>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content container">
+            <div class="row">
+                <div class="col-12">
+                    <span class="close-button">&times;</span>
                 </div>
-                <div class="product">
-                    <img src="images/GlowBar.png" alt="Glowbar product image"></img>
-                    <h1>GlowBar</h1>
-                    <p>Orange Oatmeal</p><br/>
-                    <h2>$13.99</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img id="modalImage" src="" alt="Product image">
                 </div>
-                <div class="product">
-                    <img src="images/GlowBar.png" alt="Glowbar product image"></img>
-                    <h1>GlowBar</h1>
-                    <p>Orange Oatmeal</p><br/>
-                    <h2>$13.99</h2>
+                <div class="col-sm-6">
+                    <h1 id="modalName"></h1>
+                    <h2 id="modalSlogan"></h2>
+                    <div class="option-btns">
+                        <button id="modalSelected"></button>
+                        <button id="modalAlt"></button>
+                    </div>
+                    <h3>Description</h3>
+                    <p id="modalDesc"></p>
+                    <hr>
+                    <h3 id="modalPrice">
+                        </h2>
+                        <hr>
+                        <form>
+                            <select name="itemNumber" id="itemNumber">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <button id="AddToCart">Add to Cart</button>
+                        </form>
                 </div>
             </div>
         </div>
+    </div>
+    <script>
+        const productDivs = document.querySelectorAll('.shop-product');
+        const modal = document.getElementById('productModal');
+        const closeBtn = document.querySelector('.close-button');
 
-        <div id="testimonials">
-            <img id="testimonial-1" src="images/Candle.png"></img>
-            <img id="testimonial-2" src="images/Ellipse1.svg"></img>
-            <p id="testimonial-text-1">“Every time I light a Wick’d candle, I feel like a druid in a cottagecore fairytale.”<br/><span>— Eli R., Asheville</span></p>
-            <img id="testimonial-3" src="images/Ellipse2.svg"></img>
-            <p id="testimonial-text-2">“I replaced half my bathroom shelf with GreenGlow finds. My plants are jealous of how natural I smell.”<br/><span>— Jessie R., Portland</span></p>
-            <img id="testimonial-4" src="images/GlowBar2.png"></img>
-        </div>
+        const modalImage = document.getElementById('modalImage');
+        const modalName = document.getElementById('modalName');
+        const modalSlogan = document.getElementById('modalSlogan');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalSelectedOption = document.getElementById('modalSelected');
+        const modalAltOption = document.getElementById('modalAlt');
 
-        <div id="newsletter">
-            <div id="signup-box">
-                <h1>Glow Gang Newsletter</h1>
-                <p>Sign up for zero-waste tips, surprise discounts, and good vibes in your inbox.</p>
-                <button onclick="location.href='Contact.html'">Join the Glow Gang</button>
-            </div>
-        </div>
 
-    </body>
-    <footer id="footer">
-        <div id="footer-logo">
-            <img src="images/GreenGlow_logo.png"></img>
-            <p>© 2025, GreenGlow</p>
+        productDivs.forEach(product => {
+            product.addEventListener('click', () => {
+                modalImage.src = product.getAttribute('data-image');
+                modalName.textContent = product.getAttribute('data-name');
+                modalSlogan.textContent = product.getAttribute('data-slogan');
+                modalDesc.textContent = product.getAttribute('data-description');
+                modalPrice.textContent = product.getAttribute('data-price');
+                modalSelectedOption.textContent = product.getAttribute('data-selected-option');
+                modalAltOption.textContent = product.getAttribute('data-alt-option');
+
+                modal.style.display = 'block';
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+<footer id="footer">
+    <div id="footer-logo">
+        <img src="images/GreenGlow_logo.png"></img>
+        <p>© 2025, GreenGlow</p>
+    </div>
+    <div id="footer-links">
+        <div>
+            <a class="footer-header" href="Contact.html">Contact Us</a>
         </div>
-        <div id="footer-links">
-            <div>
-                <a class="footer-header" href="Contact.html">Contact Us</a>
-            </div>
-            <div class="links-section">
-                <a class="footer-header" href="Shop.html">Shop</a>
-                <a href="Shop.html">Bags</a>
-                <a href="Shop.html">Candles & Soap</a>
-                <a href="Shop.html">Miscellaneous</a>
-            </div>
-            <div class="links-section">
-                <a class="footer-header">Quick Links</a>
-                <a>Return Policy</a>
-                <a>Customer Service</a>
-                <a>Careers</a>
-            </div>
+        <div class="links-section">
+            <a class="footer-header" href="Shop.html">Shop</a>
+            <a href="Shop.html">Bags</a>
+            <a href="Shop.html">Candles & Soap</a>
+            <a href="Shop.html">Miscellaneous</a>
         </div>
-    </footer>
+        <div class="links-section">
+            <a class="footer-header">Quick Links</a>
+            <a>Return Policy</a>
+            <a>Customer Service</a>
+            <a>Careers</a>
+        </div>
+    </div>
+</footer>
+
 </html>
